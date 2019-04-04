@@ -1,0 +1,38 @@
+$table-border-color: #d8ebf4;
+
+:hover{
+    cursor: pointer;
+}
+    
+:host /deep/ table tbody tr:nth-child(even) {
+    background: white !important;
+}
+    
+:host /deep/ table tbody tr:nth-child(odd) {
+    background: #f1f7ff !important;
+}
+
+:host{
+  /deep/ {
+
+    table{
+        tr {
+            td, th {
+            border: 1px solid $table-border-color;
+        }
+      }
+    }
+  }
+}
+
+ngx-smart-modal div, h1 {
+    color: #000000;
+}
+
+pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}

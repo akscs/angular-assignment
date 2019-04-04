@@ -1,0 +1,13 @@
+<error-message></error-message>
+<div class='display-posts'>
+    <ng2-smart-table [settings]="settings" [source]="source" 
+        (userRowSelect)="ngxSmartModalService.getModal('modal').open(); onUserRowSelect($event);"
+    >
+    </ng2-smart-table>
+    <ngx-smart-modal #modal customClass="msg-modal" identifier="modal">
+        <h1>Raw JSON Data</h1>
+        <div *ngIf="modal.hasData()">
+            <pre>{{ modal.getData() | json }}</pre>
+        </div>
+    </ngx-smart-modal>
+</div>

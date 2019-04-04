@@ -1,0 +1,14 @@
+/**
+ * Global Application Styles
+ */
+
+@import 'constants';
+$dialog-position-top: 7%;
+@import "~ngx-smart-modal/ngx-smart-modal";
+
+body {
+	background-color: $primary-bg;
+	color: #000000;
+	font-family: $primary-font;
+	font-size: $primary-font-size;
+}
